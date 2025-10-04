@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "lib": [
+      "es2021",
+      "dom",
+      "dom.iterable"
+    ],
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false,
+    "noEmit": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "types": [
+      "./worker-configuration.d.ts"
+    ],
+    "incremental": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "exclude": [
+    "test"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "worker-configuration.d.ts",
+    ".next/types/**/*.ts"
+  ]
+}
